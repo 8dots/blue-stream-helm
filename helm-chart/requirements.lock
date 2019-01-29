@@ -1,6 +1,6 @@
 dependencies:
 - name: blue-stream-video
-  repository: file://../server/server-chart
+  repository: file://../blue-stream-video/server-chart
   version: 0.1.0
-digest: sha256:dcbb93ea61a0303960d28e8d16a711ef72746f544babb0be452102f68e72fb3f
-generated: 2019-01-27T05:49:18.820391301-08:00
+digest: sha256:6463fec3a42efa2b297cf42dafd3cd86c1d584d75a9edaf93bc22c8346bc20c3
+generated: 2019-01-29T01:40:55.0054676-08:00

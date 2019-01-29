@@ -1,4 +1,4 @@
 dependencies:
   - name: blue-stream-video
     version: 0.1.0
-    repository: file://../server/server-chart
+    repository: file://../blue-stream-video

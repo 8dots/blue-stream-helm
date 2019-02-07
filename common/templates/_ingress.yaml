@@ -2,6 +2,8 @@
 {{- if .Values.ingress.enabled -}}
 {{- $fullName := include "common.fullname" . -}}
 {{- $ingressPath := .Values.ingress.path -}}
+{{- $ingressPath2 := .Values.ingress.path2 -}}
+{{- $ingressPath3 := .Values.ingress.path3 -}}
 {{- $common := dict "Values" .Values.common -}} 
 {{- $noCommon := omit .Values "common" -}} 
 {{- $overrides := dict "Values" $noCommon -}} 
@@ -12,10 +14,8 @@ kind: Ingress
 {{ template "common.metadata" . }}
 {{- with .Values.ingress.annotations }}
   annotations:
-    kubernetes.io/ingress.class: nginx
-    nginx.ingress.kubernetes.io/ssl-redirect: "false"  
-# {{ toYaml . | indent 4 }}
-# {{- end }}
+{{ toYaml . | indent 4 }}
+{{- end }}
 spec:
 # {{- if .Values.ingress.tls }}
 #   tls:
@@ -36,6 +36,18 @@ spec:
             backend:
               serviceName: {{ $fullName }}
               servicePort: http
+    - http:
+        paths:
+          - path: {{ $ingressPath2 }}
+            backend:
+              serviceName: {{ $fullName }}
+              servicePort: http
+    - http:
+        paths:
+          - path: {{ $ingressPath3 }}
+            backend:
+              serviceName: blue-stream-channel
+              servicePort: 3000
   {{- end }}
 {{- end }}
 {{- end -}}

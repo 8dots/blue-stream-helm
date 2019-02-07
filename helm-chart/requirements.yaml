@@ -2,3 +2,43 @@ dependencies:
   - name: blue-stream-video
     version: 0.1.0
     repository: file://../blue-stream-video
+  
+  - name: blue-stream-channel
+    version: 0.1.0
+    repository: file://../blue-stream-channel
+  
+  - name: blue-stream-client
+    version: 0.1.0
+    repository: file://../blue-stream-client
+  
+  - name: blue-stream-transcoder
+    version: 0.1.0
+    repository: file://../blue-stream-transcoder
+  
+  - name: blue-stream-video-compositor
+    version: 0.1.0
+    repository: file://../blue-stream-video-compositor
+  
+  - name: blue-stream-uploader
+    version: 0.1.0
+    repository: file://../blue-stream-uploader
+  
+  - name: blue-stream-users
+    version: 0.1.0
+    repository: file://../blue-stream-users
+  
+  - name: blue-stream-reactions
+    version: 0.1.0
+    repository: file://../blue-stream-reactions
+  
+  - name: blue-stream-reaction-compositor
+    version: 0.1.0
+    repository: file://../blue-stream-reaction-compositor
+
+  - name: blue-stream-comment-compositor
+    version: 0.1.0
+    repository: file://../blue-stream-comment-compositor
+  
+
+
+

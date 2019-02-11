@@ -29,5 +29,14 @@ dependencies:
 - name: blue-stream-comment-compositor
   repository: file://../blue-stream-comment-compositor
   version: 0.1.0
-digest: sha256:d7209642118079e717c7072cc74144b94fd3dacc5b1624450c59253a246ac746
-generated: 2019-02-07T01:35:21.26225817-08:00
+- name: blue-stream-reactions
+  repository: file://../blue-stream-reactions
+  version: 0.1.0
+- name: blue-stream-comments
+  repository: file://../blue-stream-comments
+  version: 0.1.0
+- name: blue-stream-streamer
+  repository: file://../blue-stream-streamer
+  version: 0.1.0
+digest: sha256:2de9e0f05c80dcc3dcb279a13eb5822b5ce0bf5225805b48907f046db98127e9
+generated: 2019-02-07T07:34:16.550161229-08:00

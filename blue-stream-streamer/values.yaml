@@ -5,16 +5,16 @@
 replicaCount: 1
 
 image:
-  tag: f220cdd
+  tag: 1d39e34
 
-nameOverride: "blue-stream-uploader"
-fullnameOverride: "blue-stream-uploader"
+nameOverride: "blue-stream-streamer"
+fullnameOverride: "blue-stream-streamer"
 
 service:
   type: ClusterIP
   port: 3000
   targetPort: 3000
-
+  rpcPort: 6000
 ingress:
   enabled: true
   annotations: 
@@ -26,10 +26,9 @@ ingress:
     nginx.ingress.kubernetes.io/cors-allow-methods: "PUT, GET, POST, OPTIONS"
     nginx.ingress.kubernetes.io/cors-allow-origin: "*.northeurope.cloudapp.azure.com"
     nginx.ingress.kubernetes.io/cors-allow-credentials: "true"
-    ingress.kubernetes.io/proxy-body-size: "1000m"
-  path: /api/upload
-  hosts:
-    - blue-stream.northeurope.cloudapp.azure.com
+  path: /api/streamer
+  # hosts:
+  #   - localhost
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:

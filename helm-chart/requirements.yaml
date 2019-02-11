@@ -39,6 +39,18 @@ dependencies:
     version: 0.1.0
     repository: file://../blue-stream-comment-compositor
   
+  - name: blue-stream-reactions
+    version: 0.1.0
+    repository: file://../blue-stream-reactions
+
+  - name: blue-stream-comments
+    version: 0.1.0
+    repository: file://../blue-stream-comments
+
+  - name: blue-stream-streamer
+    version: 0.1.0
+    repository: file://../blue-stream-streamer
+   
 
 
 

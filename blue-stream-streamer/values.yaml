@@ -27,8 +27,8 @@ ingress:
     nginx.ingress.kubernetes.io/cors-allow-origin: "*.northeurope.cloudapp.azure.com"
     nginx.ingress.kubernetes.io/cors-allow-credentials: "true"
   path: /api/streamer
-  # hosts:
-  #   - localhost
+  hosts:
+    - 'blue-stream.northeurope.cloudapp.azure.com'
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:

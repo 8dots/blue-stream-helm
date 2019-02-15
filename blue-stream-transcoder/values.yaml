@@ -16,10 +16,6 @@ service:
   targetPort: 3000
 ingress:
   enabled: false
-  annotations: 
-    kubernetes.io/ingress.class: nginx
-    nginx.ingress.kubernetes.io/ssl-redirect: "false"
-    # nginx.ingress.kubernetes.io/rewrite-target: /
   path: 
   # hosts:
   #   - localhost

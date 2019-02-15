@@ -28,18 +28,18 @@ spec:
 #   {{- end }}
 # {{- end }}
   rules:
-  {{- range .Values.ingress.hosts }}
+  {{- range .Values.global.ingress.hosts }}
     - host: {{ . | quote }}
       http:
         paths:
           - path: {{ $ingressPath }}
             backend:
               serviceName: {{ $fullName }}
-              servicePort: 3000
+              servicePort: http
           - path: {{ $ingressPath2 }}
             backend:
               serviceName: {{ $fullName }}
-              servicePort: 3000
+              servicePort: http
           - path: {{ $ingressPath3 }}
             backend:
               serviceName: blue-stream-channel

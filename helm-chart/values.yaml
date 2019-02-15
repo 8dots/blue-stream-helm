@@ -1,0 +1,4 @@
+global:
+  ingress:
+      hosts:
+        - 'blue-stream.northeurope.cloudapp.azure.com'

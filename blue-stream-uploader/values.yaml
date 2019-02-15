@@ -17,19 +17,7 @@ service:
 
 ingress:
   enabled: true
-  annotations: 
-    kubernetes.io/ingress.class: nginx
-    nginx.ingress.kubernetes.io/ssl-redirect: "false"
-    nginx.ingress.kubernetes.io/add-base-url: "true"
-    # nginx.ingress.kubernetes.io/rewrite-target: /
-    nginx.ingress.kubernetes.io/enable-cors: "true"
-    nginx.ingress.kubernetes.io/cors-allow-methods: "PUT, GET, POST, OPTIONS"
-    nginx.ingress.kubernetes.io/cors-allow-origin: "*.northeurope.cloudapp.azure.com"
-    nginx.ingress.kubernetes.io/cors-allow-credentials: "true"
-    ingress.kubernetes.io/proxy-body-size: "1000m"
   path: /api/upload
-  hosts:
-    - blue-stream.northeurope.cloudapp.azure.com
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:

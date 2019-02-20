@@ -4,6 +4,7 @@
 {{- $ingressPath := .Values.ingress.path -}}
 {{- $ingressPath2 := .Values.ingress.path2 -}}
 {{- $ingressPath3 := .Values.ingress.path3 -}}
+{{- $name3 := .Values.service.name3 -}}
 {{- $common := dict "Values" .Values.common -}} 
 {{- $noCommon := omit .Values "common" -}} 
 {{- $overrides := dict "Values" $noCommon -}} 
@@ -42,7 +43,7 @@ spec:
               servicePort: http
           - path: {{ $ingressPath3 }}
             backend:
-              serviceName: blue-stream-channel
+              serviceName: {{ $name3 }}
               servicePort: 3000
   {{- end }}
 {{- end }}

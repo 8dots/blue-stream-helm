@@ -33,6 +33,7 @@ spec:
             - name: rpc
               containerPort: {{ .Values.service.rpcPort }}
               protocol: TCP
+
           # livenessProbe:
           #   httpGet:
           #     path: /

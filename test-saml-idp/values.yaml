@@ -5,22 +5,19 @@
 replicaCount: 1
 
 image:
-  tag: 02aeffa
+  tag: 4d94ec2
 
-nameOverride: "blue-stream-video-compositor"
-fullnameOverride: "blue-stream-video-compositor"
+nameOverride: "test-saml-idp"
+fullnameOverride: "test-saml-idp"
 
 service:
   type: ClusterIP
-  port: 3000
-  targetPort: 3000
+  port: 8080
+  targetPort: 8080
   rpcPort: 6000
-  name3: blue-stream-channel
 ingress:
   enabled: true
-  path: /api/video
-  path2: /api/view
-  path3: /api/channel
+  path: /simplesaml
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:

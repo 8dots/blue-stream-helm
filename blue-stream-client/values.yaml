@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  tag: 8ad0c75
+  tag: 7256440v
 
 nameOverride: "blue-stream-client"
 fullnameOverride: "blue-stream-client"
@@ -17,8 +17,8 @@ service:
   #rpcPort: 6000
 ingress:
   enabled: true
-  annotations: 
-    nginx.ingress.kubernetes.io/rewrite-target: /
+  # annotations: 
+  #   nginx.ingress.kubernetes.io/rewrite-target: /
   path: /client
   tls: []
   #  - secretName: chart-example-tls

@@ -5,22 +5,22 @@
 replicaCount: 1
 
 image:
-  tag: 02aeffa
+  tag: 2351bff
 
-nameOverride: "blue-stream-video-compositor"
-fullnameOverride: "blue-stream-video-compositor"
+nameOverride: "blue-stream-auth"
+fullnameOverride: "blue-stream-auth"
 
 service:
   type: ClusterIP
   port: 3000
   targetPort: 3000
   rpcPort: 6000
-  name3: blue-stream-channel
+  name3: blue-stream-auth
 ingress:
   enabled: true
-  path: /api/video
-  path2: /api/view
-  path3: /api/channel
+  path: /login
+  path2: /metadata.xml
+  path3: /metadata.xml/callback
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:

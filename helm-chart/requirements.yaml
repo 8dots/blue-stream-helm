@@ -51,6 +51,12 @@ dependencies:
     version: 0.1.0
     repository: file://../blue-stream-streamer
    
+  - name: blue-stream-auth
+    version: 0.1.0
+    repository: file://../blue-stream-auth
 
+  - name: test-saml-idp
+    version: 0.1.0
+    repository: file://../test-saml-idp
 
 

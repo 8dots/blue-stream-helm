@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  tag: 02aeffa
+  tag: d9b9b37
 
 nameOverride: "blue-stream-video-compositor"
 fullnameOverride: "blue-stream-video-compositor"
@@ -21,6 +21,7 @@ ingress:
   path: /api/video
   path2: /api/view
   path3: /api/channel
+  path4: /api/userPermissions
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:

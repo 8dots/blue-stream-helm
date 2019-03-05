@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  tag: 28a2423
+  tag: 2a10f08
 
 nameOverride: "blue-stream-comments"
 fullnameOverride: "blue-stream-comments"

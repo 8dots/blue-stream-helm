@@ -4,6 +4,7 @@
 {{- $ingressPath := .Values.ingress.path -}}
 {{- $ingressPath2 := .Values.ingress.path2 -}}
 {{- $ingressPath3 := .Values.ingress.path3 -}}
+{{- $ingressPath4 := .Values.ingress.path4 -}}
 {{- $name3 := .Values.service.name3 -}}
 {{- $common := dict "Values" .Values.common -}} 
 {{- $noCommon := omit .Values "common" -}} 
@@ -44,7 +45,11 @@ spec:
           - path: {{ $ingressPath3 }}
             backend:
               serviceName: {{ $name3 }}
-              servicePort: 3000
+              servicePort: http
+          - path: {{ $ingressPath4 }}
+            backend:
+              serviceName: {{ $fullName }}
+              servicePort: http
   {{- end }}
 {{- end }}
 {{- end -}}

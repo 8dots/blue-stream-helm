@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  tag: aaa002d
+  tag: f6e2d14
 
 nameOverride: "blue-stream-channel"
 fullnameOverride: "blue-stream-channel"

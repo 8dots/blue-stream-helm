@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  tag: 1d39e34
+  tag: 85f1813
 
 nameOverride: "blue-stream-streamer"
 fullnameOverride: "blue-stream-streamer"

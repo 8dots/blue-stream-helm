@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  tag: 7990a63
+  tag: 890df7e
 
 nameOverride: "blue-stream-video"
 fullnameOverride: "blue-stream-video"

@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  tag: a836142
+  tag: 03b7b51
 
 nameOverride: "blue-stream-reactions"
 fullnameOverride: "blue-stream-reactions"

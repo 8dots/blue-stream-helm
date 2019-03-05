@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  tag: 7256440v
+  tag: 552d858
 
 nameOverride: "blue-stream-client"
 fullnameOverride: "blue-stream-client"

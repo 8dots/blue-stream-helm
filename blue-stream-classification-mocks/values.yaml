@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  tag: e285ef1
+  tag: 2a911a4
 
-nameOverride: "blue-stream-users"
-fullnameOverride: "blue-stream-users"
+nameOverride: "blue-stream-classification-mocks"
+fullnameOverride: "blue-stream-classification-mocks"
 
 service:
   type: ClusterIP
@@ -17,7 +17,7 @@ service:
   rpcPort: 6000
 ingress:
   enabled: false
-  path: /api/user
+  path: 
   # hosts:
   #   - localhost
   tls: []

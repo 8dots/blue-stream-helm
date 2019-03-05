@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  tag: 7b16e9e
+  tag: 386befe
 
 nameOverride: "blue-stream-comment-compositor"
 fullnameOverride: "blue-stream-comment-compositor"

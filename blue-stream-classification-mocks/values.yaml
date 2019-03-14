@@ -10,6 +10,10 @@ image:
 nameOverride: "blue-stream-classification-mocks"
 fullnameOverride: "blue-stream-classification-mocks"
 
+deployment:
+  health:
+    enabled: true
+
 service:
   type: ClusterIP
   port: 3000

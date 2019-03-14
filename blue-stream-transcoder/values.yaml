@@ -9,7 +9,9 @@ image:
 
 nameOverride: "blue-stream-transcoder"
 fullnameOverride: "blue-stream-transcoder"
-
+deployment:
+  health:
+    enabled: false
 service:
   type: ClusterIP
   port: 3000

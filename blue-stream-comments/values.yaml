@@ -5,11 +5,13 @@
 replicaCount: 1
 
 image:
-  tag: 2a10f08
+  tag: a889355
 
 nameOverride: "blue-stream-comments"
 fullnameOverride: "blue-stream-comments"
-
+deployment:
+  health:
+    enabled: false
 service:
   type: ClusterIP
   port: 3000

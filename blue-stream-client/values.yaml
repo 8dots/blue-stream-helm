@@ -5,11 +5,38 @@
 replicaCount: 1
 
 image:
-  tag: 552d858
+  tag: bc19d93
 
 nameOverride: "blue-stream-client"
 fullnameOverride: "blue-stream-client"
-
+deployment:
+  health:
+    enabled: false
+    checks:
+      livenessProbe:
+        httpGet:
+          path: /client
+          port: 80
+          httpHeaders:
+          - name: authorization
+            value: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVzZXJAZG8ifQ.k1sGqvw0IJ1ocB9XrF8Oviaz4D-A4E9fDkz_VmAY-LA
+        initialDelaySeconds: 30
+        periodSeconds: 15
+        timeoutSeconds: 1
+        successThreshold: 1
+        failureThreshold: 3
+      readinessProbe:
+        httpGet:
+          path: /client
+          port: 80
+          httpHeaders:
+          - name: authorization
+            value: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InVzZXJAZG8ifQ.k1sGqvw0IJ1ocB9XrF8Oviaz4D-A4E9fDkz_VmAY-LA
+        initialDelaySeconds: 30
+        periodSeconds: 15
+        timeoutSeconds: 1
+        successThreshold: 1
+        failureThreshold: 3
 service:
   type: ClusterIP
   port: 80
@@ -18,7 +45,7 @@ service:
 ingress:
   enabled: true
   # annotations: 
-  #   nginx.ingress.kubernetes.io/rewrite-target: /
+  #   nginx.ingress.kubernetes.io/app-root: "/"
   path: /client
   tls: []
   #  - secretName: chart-example-tls

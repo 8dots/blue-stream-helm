@@ -5,11 +5,14 @@
 replicaCount: 1
 
 image:
-  tag: d9b9b37
+  tag: e468edd
 
 nameOverride: "blue-stream-video-compositor"
 fullnameOverride: "blue-stream-video-compositor"
 
+deployment:
+  health:
+    enabled: false
 service:
   type: ClusterIP
   port: 3000

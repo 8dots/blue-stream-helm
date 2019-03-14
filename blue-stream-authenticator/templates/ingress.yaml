@@ -17,9 +17,17 @@ spec:
     - host: {{ . | quote }}
       http:
         paths:
-          - path: /api/comment
+          - path: /login
             backend:
-              serviceName: blue-stream-comment-compositor
+              serviceName: blue-stream-authenticator
+              servicePort: http
+          - path: /metadata.xml
+            backend:
+              serviceName: blue-stream-authenticator
+              servicePort: http
+          - path: /metadata.xml/callback
+            backend:
+              serviceName: blue-stream-authenticator
               servicePort: http
   {{- end }}
 {{- end -}}

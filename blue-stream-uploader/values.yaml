@@ -5,11 +5,13 @@
 replicaCount: 1
 
 image:
-  tag: f220cdd
+  tag: 15a2a21  
 
 nameOverride: "blue-stream-uploader"
 fullnameOverride: "blue-stream-uploader"
-
+deployment:
+  health:
+    enabled: false
 service:
   type: ClusterIP
   port: 3000

@@ -38,11 +38,14 @@ dependencies:
 - name: blue-stream-streamer
   repository: file://../blue-stream-streamer
   version: 0.1.0
-- name: blue-stream-auth
-  repository: file://../blue-stream-auth
+- name: blue-stream-authenticator
+  repository: file://../blue-stream-authenticator
   version: 0.1.0
 - name: test-saml-idp
   repository: file://../test-saml-idp
   version: 0.1.0
-digest: sha256:490af51c55bd6e326373c7b1ff6e3e3733c8d60526ad1965573c84e978b0b393
-generated: 2019-02-18T06:11:22.603605357-08:00
+- name: classification-updater-cron
+  repository: file://../classification-updater-cron
+  version: 0.1.0
+digest: sha256:0af8fe340135e1ae664b295dc9313e50a9b5a5c9a6f67dc335b41f26e58fac7e
+generated: 2019-03-12T00:50:23.457371555-07:00

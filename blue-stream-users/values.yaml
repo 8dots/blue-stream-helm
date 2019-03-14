@@ -5,11 +5,14 @@
 replicaCount: 1
 
 image:
-  tag: e285ef1
+  tag: 4016dd8  
 
 nameOverride: "blue-stream-users"
 fullnameOverride: "blue-stream-users"
 
+deployment:
+  health:
+    enabled: false
 service:
   type: ClusterIP
   port: 3000

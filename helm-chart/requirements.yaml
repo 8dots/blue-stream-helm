@@ -51,12 +51,14 @@ dependencies:
     version: 0.1.0
     repository: file://../blue-stream-streamer
    
-  - name: blue-stream-auth
+  - name: blue-stream-authenticator
     version: 0.1.0
-    repository: file://../blue-stream-auth
+    repository: file://../blue-stream-authenticator
 
   - name: test-saml-idp
     version: 0.1.0
     repository: file://../test-saml-idp
 
-
+  - name: classification-updater-cron
+    version: 0.1.0
+    repository: file://../classification-updater-cron

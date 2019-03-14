@@ -5,10 +5,14 @@
 replicaCount: 1
 
 image:
-  tag: 890df7e
+  tag: bc29ac8
 
 nameOverride: "blue-stream-video"
 fullnameOverride: "blue-stream-video"
+
+deployment:
+  health:
+    enabled: false
 
 service:
   type: ClusterIP

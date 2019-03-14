@@ -5,23 +5,24 @@
 replicaCount: 1
 
 image:
-  tag: ea06893
+  tag: 3d1c306
 
-nameOverride: "blue-stream-channel"
-fullnameOverride: "blue-stream-channel"
+nameOverride: "blue-stream-authenticator"
+fullnameOverride: "blue-stream-authenticator"
 deployment:
   health:
-    enabled: false
+    enabled: true
 service:
   type: ClusterIP
   port: 3000
   targetPort: 3000
   rpcPort: 6000
+  name3: blue-stream-authenticator
 ingress:
-  enabled: false
-  path: /api/channel/
-  # hosts:
-  #   - localhost
+  enabled: true
+  path: /login
+  path2: /metadata.xml
+  path3: /metadata.xml/callback
   tls: []
   #  - secretName: chart-example-tls
   #    hosts:

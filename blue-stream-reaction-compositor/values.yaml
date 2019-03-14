@@ -5,11 +5,13 @@
 replicaCount: 1
 
 image:
-  tag: d4f0c7d
+  tag: 0ce0d60
 
 nameOverride: "blue-stream-reaction-compositor"
 fullnameOverride: "blue-stream-reaction-compositor"
-
+deployment:
+  health:
+    enabled: false
 service:
   type: ClusterIP
   port: 3000

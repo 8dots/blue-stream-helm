@@ -5,11 +5,13 @@
 replicaCount: 1
 
 image:
-  tag: 85f1813
+  tag: cf1cb2a
 
 nameOverride: "blue-stream-streamer"
 fullnameOverride: "blue-stream-streamer"
-
+deployment:
+  health:
+    enabled: false
 service:
   type: ClusterIP
   port: 3000
